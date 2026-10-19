@@ -1,0 +1,8 @@
+﻿"id","dokumen","terkait","kondisi","tindak_lanjut"
+"D01","S-001","T01/T11","invoice tersedia","Cocokkan pengiriman dan penerimaan"
+"D02","B-001","T02/T09","invoice tersedia","Cocokkan penerimaan barang dan pelunasan"
+"D03","ATK-001","T06/T07","satu kuitansi, dua baris impor","Konfirmasi satu pembayaran lalu keluarkan T07 dari posting"
+"D04","UTIL-001","T10","invoice belum tersedia","Minta invoice; pembayaran bank bukan rincian pajak"
+"D05","ASET-001","T12","invoice tersedia","Review kapitalisasi, masa manfaat, dan kebijakan entitas"
+"D06","Rincian pajak dokumen","seluruh dokumen","tidak disediakan pada simulasi","Tentukan kebutuhan sumber dan dokumen; jangan mengarang DPP atau tarif"
+"D07","Daftar umur piutang","saldo awal","tanggal jatuh tempo belum tersedia","Minta rincian jatuh tempo sebelum menghitung aging"

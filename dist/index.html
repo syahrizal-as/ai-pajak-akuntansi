@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="description" content="Portal pelatihan praktis AI untuk konsultan pajak dan akuntansi di Indonesia. Sembilan modul, studi kasus, dataset dummy, dan kuis interaktif.">
+ <meta name="color-scheme" content="light dark">
+ <title>AI untuk Konsultan Pajak & Akuntansi</title>
+ <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="assets/style.css">
+ <script src="assets/datasets.js" defer></script>
+ <script src="assets/content.js" defer></script>
+ <script src="assets/app.js" defer></script>
+</head>
+<body>
+ <a class="skip" href="#utama">Lewati ke konten utama</a>
+ <header class="topbar">
+  <a href="#/" class="brand" aria-label="Beranda AI Praktika"><span class="brand-icon" aria-hidden="true">a<span>i</span></span><span>AI<span class="brand-light">Praktika</span><small>PAJAK & AKUNTANSI</small></span></a>
+  <span class="top-divider"></span><span class="top-label">Portal materi pelatihan</span>
+  <div class="top-actions"><span class="local-badge"><i></i>Siap belajar offline</span><button id="theme" class="icon-button" aria-label="Aktifkan mode gelap" title="Ganti tema"></button><button id="menu" class="icon-button menu-button" aria-label="Buka navigasi" aria-expanded="false" aria-controls="sidebar"></button></div>
+ </header>
+ <button class="overlay" id="overlay" aria-label="Tutup navigasi" hidden></button>
+ <aside class="sidebar" id="sidebar" aria-label="Navigasi pembelajaran">
+  <div class="side-top"><span class="eyebrow">RUANG BELAJAR</span><a href="#/" class="nav-home" data-nav="home"><span aria-hidden="true">⌂</span> Ikhtisar pelatihan</a></div>
+  <div class="side-heading">KURIKULUM <span>9 MODUL</span></div>
+  <nav id="module-nav" aria-label="Daftar modul"></nav>
+  <div class="side-heading side-resource">PERPUSTAKAAN</div>
+  <nav class="resource-nav" aria-label="Sumber belajar"><a href="#/bahan" data-nav="bahan">Bahan praktik <span>↗</span></a><a href="#/glosarium" data-nav="glosarium">Glosarium <span>↗</span></a><a href="#/referensi" data-nav="referensi">Referensi resmi <span>↗</span></a><a href="#/panduan" data-nav="panduan">Panduan instruktur <span>↗</span></a></nav>
+  <div class="side-progress"><div><strong>Progres Anda</strong><span id="progress-label">0 / 9</span></div><progress id="progress" max="9" value="0" aria-label="Modul yang ditandai selesai"></progress><p id="storage-note">Tersimpan di browser ini.</p><a href="#/panduan/penyimpanan">Tentang penyimpanan progres</a></div>
+ </aside>
+ <div class="workspace">
+  <div class="utility"><nav id="breadcrumb" aria-label="Breadcrumb"></nav><div class="search-wrap"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Cari materi atau istilah…" aria-label="Cari seluruh materi" aria-controls="search-results" autocomplete="off"><kbd>/</kbd></label><div id="search-results" class="search-results" hidden></div></div></div>
+  <main id="utama" tabindex="-1"></main>
+  <footer class="site-footer"><span>AI Praktika <span aria-hidden="true">·</span> Pembelajaran berbasis praktik</span><span>Data simulasi. Keputusan tetap pada profesional.</span></footer>
+ </div>
+ <div id="toast" class="toast" role="status" aria-live="polite"></div>
+ <dialog id="copy-dialog" aria-labelledby="copy-title"><h2 id="copy-title">Salin prompt secara manual</h2><p>Salin otomatis tidak tersedia pada browser ini. Pilih teks berikut lalu gunakan Ctrl/Cmd+C.</p><textarea id="copy-text" readonly aria-label="Teks prompt"></textarea><form method="dialog"><button class="button primary">Tutup</button></form></dialog>
+ <noscript><p class="no-script">Aktifkan JavaScript untuk materi dan kuis interaktif. Seluruh bahan latihan tetap tersedia di folder data.</p></noscript>
+</body>
+</html>

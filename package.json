@@ -1,0 +1,15 @@
+{
+  "name": "ai-konsultan-pajak-akuntansi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portal materi pelatihan AI untuk konsultan pajak dan akuntansi, siap offline.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test tests/content.mjs && node tests/browser.cjs",
+    "preview": "python3 -m http.server 4173 --bind 127.0.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

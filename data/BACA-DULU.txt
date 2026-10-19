@@ -1,0 +1,8 @@
+PAKET SIMULASI — PT ARUNIKA NIAGA
+Periode September 2026. Semua pihak fiktif, nilai rupiah.
+CSV UTF-8, pemisah koma. Kolom kosong bukan nol.
+12 baris transaksi mentah memuat kandidat duplikat T07.
+Rincian pajak, penyusutan, dan jatuh tempo piutang tidak tersedia.
+contoh-jurnal.csv adalah bahan pembahasan, bukan hasil final yang disetujui.
+Buka dokumen-dummy.html untuk invoice dan kuitansi; cetak melalui browser.
+Gunakan lembar-kerja.md untuk bukti praktik, sumber, dan evaluasi.
