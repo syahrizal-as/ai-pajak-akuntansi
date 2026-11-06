@@ -369,3 +369,50 @@
  .editorial-hero .hero-actions .button {gap:11px}
  .editorial-hero .hero-actions .text-button {padding-inline:8px}
 }
+@media screen {
+ .hero-instructor {display:flex;align-items:center;gap:11px;margin-top:24px;color:var(--muted);font-size:11px;line-height:1.7}
+ .hero-instructor a {font-weight:600;color:var(--ink);text-underline-offset:3px}
+ .hero-instructor small {display:block;font-size:10px;margin-top:2px}
+ .instructor-monogram {width:122px;height:130px;position:relative;display:grid;place-content:center;border:1px solid var(--border);border-radius:10px;background:var(--mint);color:var(--green);font-size:43px;font-weight:500;letter-spacing:-.06em;margin:31px 0 25px}
+ .instructor-monogram>span {position:absolute;bottom:13px;left:0;right:0;text-align:center;font-size:6px;letter-spacing:.18em;font-weight:600}
+ .instructor-monogram.small {width:35px;height:35px;border-radius:50%;font-size:13px;letter-spacing:-.03em;flex-shrink:0;margin:0}
+ .hero-copy .hero-review-note {margin-top:17px;font-size:10px}
+ .instructor-section {display:grid;grid-template-columns:.9fr 1.25fr;gap:70px;padding:65px 0 0;border-top:1px solid var(--border);scroll-margin-top:140px}
+ .instructor-identity {padding:30px 35px 32px;border:1px solid var(--border);border-radius:8px;background:var(--surface)}
+ .instructor-identity h2 {font-size:35px;font-weight:550;letter-spacing:-.055em;line-height:1.2;margin:0 0 13px}
+ .instructor-role {font-size:13px;line-height:1.9;color:var(--muted);margin:0}
+ .instructor-facts {border-top:1px solid var(--border);margin:24px 0 0;padding-top:18px}
+ .instructor-facts>div {margin-top:9px}.instructor-facts dt {font-size:9px;letter-spacing:.08em;color:var(--muted)}
+ .instructor-facts dd {margin:3px 0 0;font-size:12px;color:var(--ink)}
+ .instructor-story {padding-top:30px;align-self:center}
+ .instructor-story>.eyebrow {font-size:9px;line-height:1.9;display:block}
+ .instructor-story h3 {font-size:34px;line-height:1.35;letter-spacing:-.045em;font-weight:550;margin:22px 0 25px}
+ .instructor-story h3 em {font-weight:500;color:var(--muted);font-style:normal}
+ .instructor-story>p {font-size:14px;line-height:1.95;color:var(--muted);margin-bottom:18px}
+ .instructor-method {display:flex;flex-wrap:wrap;gap:17px;padding:18px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin:23px 0 19px;font-size:11px;color:var(--ink)}
+ .instructor-method span {display:flex;align-items:center;gap:7px}.instructor-method svg {width:15px;height:15px;color:var(--green)}
+ .instructor-story>p.note {font-size:11px;line-height:1.9}
+ .site-footer a {text-decoration:none}.site-footer a:hover {text-decoration:underline}
+}
+@media screen and (max-width:1000px) {
+ .instructor-section {gap:35px;grid-template-columns:.95fr 1.25fr}
+ .instructor-identity {padding:26px}.instructor-identity h2 {font-size:30px}
+ .instructor-story h3 {font-size:28px}.instructor-story>p {font-size:13px}
+}
+@media screen and (max-width:700px) {
+ .hero-instructor {font-size:11px;margin-top:23px}.hero-instructor small {font-size:9px}
+ .instructor-section {grid-template-columns:1fr;gap:27px;padding:42px 0 0;scroll-margin-top:120px}
+ .instructor-identity {padding:27px 25px}.instructor-monogram {width:100px;height:105px;font-size:36px;margin-top:27px}
+ .instructor-identity h2 {font-size:33px}.instructor-role {font-size:12px}.instructor-facts dd {font-size:12px}
+ .instructor-story {padding:0}.instructor-story h3 {font-size:29px;margin:19px 0 22px}.instructor-story>p {font-size:14px}
+ .instructor-story>.eyebrow {font-size:8px}.instructor-method {font-size:10px;gap:14px}.instructor-story>p.note {font-size:11px}
+}
+@media print {
+ .hero-instructor {font-size:10pt;margin:10px 0}.hero-instructor .instructor-monogram {display:none}.hero-instructor small {display:block}
+ .instructor-section {break-inside:avoid;margin:20px 0}.instructor-section h2 {font-size:22pt}.instructor-section h3 {font-size:17pt}.instructor-monogram {display:none}
+ .instructor-facts>div {display:inline-block;margin-right:25px}.instructor-facts dt {font-size:9pt}.instructor-facts dd {margin-left:0;font-size:10pt}.instructor-method {display:none}
+}
+@media screen {
+ .home-page main section[tabindex="-1"]:focus {outline:none}
+ .instructor-section {scroll-margin-top:12px}
+}
