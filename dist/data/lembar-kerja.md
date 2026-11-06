@@ -4,7 +4,7 @@ Nama/kode peserta: __________
 Modul / tanggal praktik: __________
 Metode: manual / alat AI yang disetujui (tuliskan versi bila tersedia): __________
 
-Semua data latihan sintetis, PT Arunika Niaga, September 2026. Satuan rupiah.
+Semua data latihan sintetis, PT ASA MITRA KONSULTAN, September 2026. Satuan rupiah.
 Simpan data mentah terpisah dari data olahan. Rincian pajak, penyusutan, dan jatuh tempo piutang tidak disediakan. Kosong bukan nol.
 
 ## 1. Peta masalah & kebutuhan

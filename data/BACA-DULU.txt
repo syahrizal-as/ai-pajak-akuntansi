@@ -1,4 +1,4 @@
-PAKET SIMULASI — PT ARUNIKA NIAGA
+PAKET SIMULASI — PT ASA MITRA KONSULTAN
 Periode September 2026. Semua pihak fiktif, nilai rupiah.
 CSV UTF-8, pemisah koma. Kolom kosong bukan nol.
 12 baris transaksi mentah memuat kandidat duplikat T07.

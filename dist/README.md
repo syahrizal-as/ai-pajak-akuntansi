@@ -43,7 +43,7 @@ Progres, jawaban terakhir, checklist, tema, dan penilaian diri tersimpan pada lo
 
 ## Konten dan akurasi
 
-PT Arunika Niaga, pihak, dan seluruh transaksi fiktif. Sumber dataset adalah assets/datasets.js. Periode September 2026, pembanding laba rugi Agustus. Kolom kosong tidak berarti nol. Pajak, penyusutan, dan umur piutang belum dimodelkan. Contoh jurnal menggunakan asumsi persediaan perpetual dan kapitalisasi T12 yang harus ditinjau.
+Studi kasus PT ASA MITRA KONSULTAN menggunakan seluruh pihak dan transaksi sintetis. Sumber dataset adalah assets/datasets.js. Periode September 2026, pembanding laba rugi Agustus. Kolom kosong tidak berarti nol. Pajak, penyusutan, dan umur piutang belum dimodelkan. Contoh jurnal menggunakan asumsi persediaan perpetual dan kapitalisasi T12 yang harus ditinjau.
 
 Kontrol kasus: T07 adalah impor ulang T06; BK10 Rp50 ribu belum ada di buku mentah. Bank buku Rp54,25 juta + koreksi duplikat Rp750 ribu − biaya bank Rp50 ribu = Rp54,95 juta. Debit dan kredit jurnal masing-masing Rp100,45 juta; hasil sebelum penyusutan dan pajak Rp4,55 juta. Aset Rp94,55 juta = utang Rp10 juta + ekuitas Rp84,55 juta.
 
@@ -63,3 +63,7 @@ Situs referensi https://materi-ai.netlify.app/ dipelajari melalui browser pada s
 - tests/: pemeriksaan konten, hitungan independen, dan browser.
 
 Konfigurasi Netlify root tetap mengarah ke portal kelas. Folder pajak memiliki konfigurasi deploy mandiri bila kelak dipilih sebagai base. Tidak ada perubahan ke portal lama atau deployment yang dijalankan oleh build.
+
+## Pembaruan desain — 6 November 2026
+
+Tampilan diselaraskan dengan referensi ai-dispora.netlify.app: beranda editorial penuh, warna hijau tua dan putih hangat, tipografi serta jarak lebih lega, ilustrasi alur dokumen, dan kartu kurikulum. Navigasi sidebar tetap tersedia pada halaman materi. Nama studi kasus diselaraskan menjadi PT ASA MITRA KONSULTAN pada materi, prompt, sampel dokumen, dan paket latihan; seluruh angka tetap simulasi.

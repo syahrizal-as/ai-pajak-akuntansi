@@ -17,7 +17,7 @@ pair('BK10','2026-09-30','ADM-001','6104','1101',50000,'draft_dari_rekening_kora
 await writeFile(path.join(root,'data/contoh-jurnal.csv'),csv([['id','tanggal','dokumen','kode_akun','nama_akun','debit','kredit','status'],...journal]));
 const total=journal.reduce((s,r)=>s+r[5],0);
 if(total!==100450000||journal.reduce((s,r)=>s+r[6],0)!==total)throw Error('Kontrol jurnal gagal');
-await writeFile(path.join(root,'data/BACA-DULU.txt'),'PAKET SIMULASI — PT ARUNIKA NIAGA\nPeriode September 2026. Semua pihak fiktif, nilai rupiah.\nCSV UTF-8, pemisah koma. Kolom kosong bukan nol.\n12 baris transaksi mentah memuat kandidat duplikat T07.\nRincian pajak, penyusutan, dan jatuh tempo piutang tidak tersedia.\ncontoh-jurnal.csv adalah bahan pembahasan, bukan hasil final yang disetujui.\nBuka dokumen-dummy.html untuk invoice dan kuitansi; cetak melalui browser.\nGunakan lembar-kerja.md untuk bukti praktik, sumber, dan evaluasi.\n');
+await writeFile(path.join(root,'data/BACA-DULU.txt'),'PAKET SIMULASI — PT ASA MITRA KONSULTAN\nPeriode September 2026. Semua pihak fiktif, nilai rupiah.\nCSV UTF-8, pemisah koma. Kolom kosong bukan nol.\n12 baris transaksi mentah memuat kandidat duplikat T07.\nRincian pajak, penyusutan, dan jatuh tempo piutang tidak tersedia.\ncontoh-jurnal.csv adalah bahan pembahasan, bukan hasil final yang disetujui.\nBuka dokumen-dummy.html untuk invoice dan kuitansi; cetak melalui browser.\nGunakan lembar-kerja.md untuk bukti praktik, sumber, dan evaluasi.\n');
 const dataFiles=[...ctx.window.DATASETS.map(d=>d.file),'contoh-jurnal.csv','dokumen-dummy.html','lembar-kerja.md','BACA-DULU.txt'];
 // Bangun ZIP baru tanpa menumpuk salinan berkas dari versi sebelumnya.
 await rm(path.join(root,'data/paket-latihan.zip'),{force:true});

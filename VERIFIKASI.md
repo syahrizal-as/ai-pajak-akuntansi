@@ -1,3 +1,22 @@
+# Pembaruan tampilan — 6 November 2026
+
+Referensi ai-dispora.netlify.app diperiksa langsung melalui browser. Beranda memakai navigasi atas, latar putih hangat, hijau tua, tipografi besar, ilustrasi dokumen, bagian program, kartu kurikulum, dan studi kasus baru. Halaman materi tetap memakai sidebar serta daftar isi. Semua penamaan kasus diselaraskan menjadi PT ASA MITRA KONSULTAN; angka dan dokumen tetap data simulasi.
+
+Pemeriksaan pada pembaruan ini:
+
+- `node pajak/scripts/build.mjs`: berhasil; paket offline dan bahan latihan dibangun ulang.
+- `node --test pajak/tests/content.mjs`: 3 test lulus, 0 gagal. Kontrol keuangan tidak berubah.
+- Browser langsung: 20 rute pada lebar 1440, 768, dan 360 piksel, total 60 kombinasi. Tidak ada overflow horizontal, nama lama, atau halaman dengan jumlah judul utama yang salah. Tiap modul tetap memiliki 13 bagian tampilan yang memuat seluruh unsur pembelajaran.
+- Navigasi menu ponsel, kuis benar beserta pembahasannya, checklist, progres setelah reload, pembatalan selesai, ulang kuis, mode gelap, pencarian isi, dan konfirmasi tombol salin diperiksa lewat UI. Clipboard sistem tidak diverifikasi ulang secara independen pada sesi ini.
+- Tidak ada error JavaScript pada log browser preview lokal.
+- Nama baru dan integritas kedua ZIP diperiksa dari isi arsip; tidak ada nama Arunika yang tersisa.
+- Tampilan desktop, ponsel, dan bagian PT ASA MITRA KONSULTAN ditinjau visual. Penanda AI pada ilustrasi diposisikan agar nominal tetap terbaca.
+- Aturan cetak lama dipertahankan; stylesheet baru terutama dibatasi ke media screen. Hasil PDF 65 halaman di bawah merupakan hasil pengujian versi 19 Oktober, bukan render ulang pada 6 November.
+
+Pemeriksaan browser pembaruan menggunakan preview HTTP lokal. Pembukaan file lokal ditolak oleh kebijakan alat browser pada sesi ini; dukungan file:// dari pengujian sebelumnya tidak diklaim diuji ulang. Tidak ada perubahan layanan backend, autentikasi, atau deployment. Progres pada origin file lama tidak dihapus.
+
+---
+
 # Hasil verifikasi — 19 Oktober 2026
 
 Implementasi berada di pajak/. Portal lama, kelas/, dispora/, dan netlify.toml root tidak diubah.
