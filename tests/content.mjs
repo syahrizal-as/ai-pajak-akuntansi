@@ -16,7 +16,7 @@ test('9 substantive modules include every required teaching component and 27 exp
   assert.equal(m.id,i+1);assert.ok(m.title.length>15);assert.equal(m.objectives.length,3);assert.equal(m.competencies.length,3);
   assert.equal(m.concepts.length,5);for(const [h,p] of m.concepts){assert.ok(h.length>8);assert.ok(p.length>180);}
   for(const k of ['tagline','caseTitle','caseText','prompt','expected','exercise','summary','safety'])assert.ok(typeof m[k]==='string'&&m[k].length>20,k);
-  assert.ok(m.steps.length>=6);assert.ok(m.applications.length>=3);assert.ok(m.mistakes.length>=3);assert.equal(m.quiz.length,3);
+  assert.equal(m.steps,undefined);assert.ok(m.applications.length>=3);assert.ok(m.mistakes.length>=3);assert.equal(m.quiz.length,3);
   for(const q of m.quiz){assert.equal(q[1].length,3);assert.ok(q[2]>=0&&q[2]<3);assert.ok(q[3].trim());}
  }
  assert.ok(new Set(COURSE.map(m=>m.prompt)).size===9);assert.ok(GLOSSARY.length>=20);

@@ -28,11 +28,11 @@ Browser suite memerlukan Playwright. Gunakan dependency Playwright yang sudah te
 
 ## Fitur
 
-- Sembilan modul dengan 15 unsur materi: tujuan, durasi, kompetensi, konsep, penerapan, kasus, langkah praktik, prompt, hasil, kesalahan, keamanan, latihan, kuis, ringkasan, checklist.
+- Sembilan modul dengan tujuan, durasi, kompetensi, konsep, penerapan, kasus, prompt, hasil, kesalahan, keamanan, latihan, kuis, ringkasan, dan checklist kompetensi. Bagian langkah praktik tidak ditampilkan.
 - Navigasi hash, daftar isi, breadcrumb, pencarian isi materi, glosarium, dan sumber resmi.
 - 27 soal formatif dengan pembahasan dan kesempatan mencoba ulang.
 - Salin prompt dengan fallback manual; tidak ada model AI yang dijalankan portal.
-- Penanda selesai mandiri, checklist praktik/kompetensi, tema, dan rubrik penilaian diri.
+- Penanda selesai mandiri, checklist kompetensi, tema, dan rubrik penilaian diri.
 - Enam dataset CSV, contoh jurnal, lembar kerja, invoice/kuitansi HTML dummy dan salinan ambigu, serta ZIP bahan.
 - Handout semua modul dan mode cetak A4 dengan pembahasan kuis.
 - Ekspor catatan progres JSON. Tidak ada fitur impor atau pengiriman tugas.
