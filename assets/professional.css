@@ -116,7 +116,7 @@
  .hero-layout {display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:center;gap:42px;min-height:500px}
  .hero-copy {padding:18px 0 35px;position:relative;z-index:1}
  .hero-eyebrow {display:flex;align-items:center;gap:10px;font-size:9px;letter-spacing:.16em;font-weight:600;line-height:1.8;color:var(--muted)}
- .hero-eyebrow i,.stats-caption>i {width:6px;height:6px;border-radius:50%;background:#8b9e68;flex-shrink:0}
+ .hero-eyebrow i {width:6px;height:6px;border-radius:50%;background:#8b9e68;flex-shrink:0}
  .editorial-hero h1 {font-size:clamp(43px,4.3vw,64px);letter-spacing:-.065em;line-height:1.13;font-weight:650;margin:24px 0 24px;max-width:none}
  .editorial-hero h1 em {color:#6c7f50;font-weight:600}
  html[data-theme=dark] .editorial-hero h1 em {color:#b4c78f}
@@ -160,15 +160,6 @@
  .visual-footer {position:absolute;bottom:0;left:20px;right:0;display:flex;gap:11px;align-items:center;font-size:7px;letter-spacing:.17em;color:var(--muted)}
  .visual-footer i {height:1px;width:34px;background:var(--border)}
  .visual-footer>span:last-child {margin-left:auto;font-size:22px;color:#809275;line-height:1}
- .learning-stats {display:grid;grid-template-columns:1.1fr repeat(3,1fr);border-top:1px solid var(--border);padding:30px 0 35px;margin-top:20px;gap:0}
- .learning-stats>div {padding-left:30px;border-left:1px solid var(--border);display:flex;flex-direction:column;justify-content:center}
- .learning-stats>div:first-child {border:0;padding-left:0}
- .learning-stats strong {font-size:35px;font-weight:500;letter-spacing:-.06em;line-height:1.4}
- .learning-stats strong small {font-size:13px;letter-spacing:-.015em;margin-left:5px;font-weight:450}
- .learning-stats>div>span {font-size:10px;color:var(--muted);margin-top:7px}
- .learning-stats .stats-caption {font-size:12px;color:var(--ink);position:relative;display:block;align-self:center;line-height:1.8;padding-right:20px}
- .stats-caption>i {display:inline-block;margin-right:7px;vertical-align:middle}
- .learning-stats .stats-caption>span {font-size:11px;color:var(--muted);margin-top:0}
  .home-section {padding-top:75px;padding-bottom:65px;scroll-margin-top:132px}
  .program-overview {display:grid;grid-template-columns:1.08fr 1fr;gap:70px;background:var(--surface);position:relative;isolation:isolate;padding-bottom:40px}
  .program-overview:before {content:"";position:absolute;inset:0 calc((1240px - 100vw)/2);background:var(--surface);z-index:-1}
@@ -247,7 +238,6 @@
  .hero-visual {height:395px;transform:scale(.9);transform-origin:center right}
  .source-document {left:-12px}.output-document {right:-10px}
  .visual-core {left:41%;top:41%}.review-chip {right:-5px;top:102px}
- .learning-stats>div {padding-left:22px}.learning-stats strong {font-size:31px}
  .program-overview {gap:45px}.program-overview h2 {font-size:33px}
  .module-card {padding:24px 22px 20px}.module-card h3 {font-size:19px}
  .spotlight {padding:42px;gap:35px}.spotlight h2 {font-size:36px}
@@ -262,10 +252,6 @@
  .hero-review-note {font-size:10px}.editorial-hero .hero-actions {gap:7px}
  .editorial-hero .hero-actions>.primary {min-width:148px}.editorial-hero .hero-actions .button {font-size:12px;padding:12px 15px}
  .hero-visual {transform:scale(.83);margin-left:-20px;transform-origin:center right}
- .learning-stats {grid-template-columns:repeat(3,1fr);margin-top:16px;padding-bottom:29px}
- .learning-stats>div.stats-caption {grid-column:1/-1;padding-bottom:21px;font-size:11px}.stats-caption>br {display:none}
- .learning-stats>div:nth-child(2) {border-left:0;padding-left:0}
- .learning-stats .stats-caption>span {font-size:11px;margin-left:4px}
  .program-overview {gap:32px;padding-top:55px}.program-overview h2 {font-size:29px}.program-overview p {font-size:13px}
  .home-page .intro-strip {gap:20px}.intro-item {gap:10px}.intro-item strong {font-size:11px}.intro-item p {font-size:10px}
  .section-title h2 {font-size:36px}.section-title {gap:20px}.section-title p {font-size:13px}
@@ -306,10 +292,6 @@
  .visual-orbit {width:280px;height:280px}.orbit-two {width:205px;height:205px}
  .visual-footer {left:10px;font-size:6px;gap:8px}.visual-footer i {width:27px}
  .output-document>strong {font-size:23px}.document-top {font-size:10px}.output-document .document-top {margin-bottom:14px}
- .learning-stats {margin-top:30px;padding:23px 0 30px}.learning-stats>div {padding-left:15px}.learning-stats>div:nth-child(2) {padding-left:0}
- .learning-stats strong {font-size:29px}.learning-stats strong small {font-size:10px;margin-left:3px}
- .learning-stats>div>span {font-size:9px;line-height:1.8;max-width:115px;padding-right:8px}
- .learning-stats .stats-caption {font-size:10px;padding-bottom:22px}.learning-stats .stats-caption>span {font-size:10px}
  .program-overview {grid-template-columns:1fr;gap:20px;padding:50px 0 30px}
  .program-overview:before,.home-page .intro-strip:before {inset:0 -22px}
  .program-overview h2 {font-size:31px;margin-top:20px;line-height:1.35;max-width:450px}
@@ -350,13 +332,11 @@
  .hero-assurance {font-size:9px;gap:15px}
  .hero-visual {height:355px}.source-document {width:218px;padding:16px}.output-document {width:220px;padding:16px;bottom:25px}.review-chip {font-size:8px;right:0;top:91px}.visual-core {width:76px;height:76px;top:44%}.document-top {font-size:9px;margin-bottom:12px}.mini-table>div {font-size:9px;padding:7px 0}.document-flag {font-size:7px}.output-document>strong {font-size:22px}.document-bars {margin-top:13px}.document-bars span {font-size:11px}
  .program-overview:before,.home-page .intro-strip:before {inset:0 -19px}
- .learning-stats strong {font-size:27px}.learning-stats>div {padding-left:12px}.learning-stats>div>span {font-size:8px}.learning-stats .stats-caption>span {font-size:9px}
  .program-overview h2 {font-size:29px}.section-title h2 {font-size:32px}.spotlight {padding:28px 23px}.spotlight h2 {font-size:31px}.learning-close h2 {font-size:27px}
 }
 @media print {
  .institutional-strip,.top-links,.hero-visual,.hero-assurance,.hero-review-note,.learning-close,.case-inventory,.course-progress {display:none!important}
  .editorial-hero {padding:0;border:0}.hero-layout {display:block}.hero-eyebrow {font-size:9pt}.hero-eyebrow i {display:none}
- .learning-stats {display:flex;gap:25px;border-top:1px solid #ccc;padding:12px 0}.learning-stats .stats-caption {display:none}.learning-stats strong {display:block;font-size:16pt}.learning-stats small {margin-left:5px;font-size:10pt}.learning-stats>div>span {font-size:8pt}
  .home-section {margin:20px 0}.home-section h2 em {font-style:normal}.spotlight {display:block;background:#fff;color:#111;border:1px solid #ccc}.spotlight .eyebrow,.spotlight p,.spotlight-note {color:#222}.spotlight h2 {font-size:23pt}.spotlight .button {display:none}
  .curriculum-footnote {font-size:9pt}.curriculum-footnote svg {display:none}.hero-copy h1 {font-size:27pt}
 }

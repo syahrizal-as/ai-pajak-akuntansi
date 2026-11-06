@@ -1,6 +1,6 @@
 # AI untuk Konsultan Pajak & Akuntansi
 
-Portal HTML/CSS/JavaScript statis di folder pajak, berdampingan dengan portal lama. Tanpa backend, autentikasi aplikasi, framework baru, font eksternal, atau panggilan API AI. Seluruh materi substantif tersedia lokal.
+Portal HTML/CSS/JavaScript statis di folder pajak untuk sesi pengenalan dan demo AI sekitar 1 jam, dengan materi pendamping untuk belajar mandiri. Tanpa backend, autentikasi aplikasi, framework baru, font eksternal, atau panggilan API AI. Seluruh materi substantif tersedia lokal.
 
 ## Jalankan
 
@@ -67,3 +67,5 @@ Konfigurasi Netlify root tetap mengarah ke portal kelas. Folder pajak memiliki k
 ## Pembaruan desain — 6 November 2026
 
 Tampilan diselaraskan dengan referensi ai-dispora.netlify.app: beranda editorial penuh, warna hijau tua dan putih hangat, tipografi serta jarak lebih lega, ilustrasi alur dokumen, dan kartu kurikulum. Navigasi sidebar tetap tersedia pada halaman materi. Nama studi kasus diselaraskan menjadi PT ASA MITRA KONSULTAN pada materi, prompt, sampel dokumen, dan paket latihan; seluruh angka tetap simulasi.
+
+Blok statistik beranda dihapus. Panduan acara memakai alur demo sekitar 60 menit; durasi tiap modul tetap merupakan estimasi belajar mandiri.
