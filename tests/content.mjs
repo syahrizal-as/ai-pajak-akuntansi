@@ -10,14 +10,13 @@ const ctx={window:{}};
 for(const file of ['content','datasets'])vm.runInNewContext(await readFile(path.join(root,'assets',file+'.js'),'utf8'),ctx);
 const {COURSE,DATASETS,GLOSSARY}=ctx.window;
 const obj=id=>{const d=DATASETS.find(d=>d.id===id);return d.rows.map(r=>Object.fromEntries(d.headers.map((h,i)=>[h,r[i]])));};
-test('9 substantive modules include every required teaching component and 27 explained quiz questions',()=>{
+test('9 substantive modules include the demo content without removed exercise sections',()=>{
  assert.equal(COURSE.length,9);assert.equal(COURSE.reduce((s,m)=>s+m.minutes,0),810);
  for(const [i,m] of COURSE.entries()){
   assert.equal(m.id,i+1);assert.ok(m.title.length>15);assert.equal(m.objectives.length,3);assert.equal(m.competencies.length,3);
   assert.equal(m.concepts.length,5);for(const [h,p] of m.concepts){assert.ok(h.length>8);assert.ok(p.length>180);}
-  for(const k of ['tagline','caseTitle','caseText','prompt','expected','exercise','summary','safety'])assert.ok(typeof m[k]==='string'&&m[k].length>20,k);
-  assert.equal(m.steps,undefined);assert.ok(m.applications.length>=3);assert.ok(m.mistakes.length>=3);assert.equal(m.quiz.length,3);
-  for(const q of m.quiz){assert.equal(q[1].length,3);assert.ok(q[2]>=0&&q[2]<3);assert.ok(q[3].trim());}
+  for(const k of ['tagline','caseTitle','caseText','prompt','expected','summary','safety'])assert.ok(typeof m[k]==='string'&&m[k].length>20,k);
+  assert.equal(m.steps,undefined);assert.ok(m.applications.length>=3);assert.ok(m.mistakes.length>=3);assert.equal(m.quiz,undefined);assert.equal(m.exercise,undefined);
  }
  assert.ok(new Set(COURSE.map(m=>m.prompt)).size===9);assert.ok(GLOSSARY.length>=20);
 });

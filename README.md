@@ -28,18 +28,17 @@ Browser suite memerlukan Playwright. Gunakan dependency Playwright yang sudah te
 
 ## Fitur
 
-- Sembilan modul dengan tujuan, durasi, kompetensi, konsep, penerapan, kasus, prompt, hasil, kesalahan, keamanan, latihan, kuis, ringkasan, dan checklist kompetensi. Bagian langkah praktik tidak ditampilkan.
+- Sembilan modul dengan tujuan, durasi, kompetensi, konsep, penerapan, kasus, prompt, hasil, kesalahan, keamanan, dan ringkasan. Bagian langkah praktik, latihan mandiri, kuis, dan checklist kompetensi tidak ditampilkan.
 - Navigasi hash, daftar isi, breadcrumb, pencarian isi materi, glosarium, dan sumber resmi.
-- 27 soal formatif dengan pembahasan dan kesempatan mencoba ulang.
 - Salin prompt dengan fallback manual; tidak ada model AI yang dijalankan portal.
-- Penanda selesai mandiri, checklist kompetensi, tema, dan rubrik penilaian diri.
+- Penanda selesai mandiri, tema, dan rubrik penilaian diri.
 - Enam dataset CSV, contoh jurnal, lembar kerja, invoice/kuitansi HTML dummy dan salinan ambigu, serta ZIP bahan.
-- Handout semua modul dan mode cetak A4 dengan pembahasan kuis.
+- Handout semua modul dan mode cetak A4.
 - Ekspor catatan progres JSON. Tidak ada fitur impor atau pengiriman tugas.
 
 ## Penyimpanan
 
-Progres, jawaban terakhir, checklist, tema, dan penilaian diri tersimpan pada localStorage dengan kunci ai-praktika-pajak-v1. Tidak ada sinkronisasi antarperangkat atau browser. Mode privat, penghapusan data, perpindahan folder file lokal, serta perubahan origin bisa memisahkan atau menghilangkan progres. Jika penyimpanan diblokir, fitur bekerja dalam memori selama sesi dan status keterbatasan ditampilkan. Berkas bukti praktik disimpan sendiri oleh peserta.
+Progres, tema, dan penilaian diri tersimpan pada localStorage dengan kunci ai-praktika-pajak-v1. Tidak ada sinkronisasi antarperangkat atau browser. Mode privat, penghapusan data, perpindahan folder file lokal, serta perubahan origin bisa memisahkan atau menghilangkan progres. Jika penyimpanan diblokir, fitur bekerja dalam memori selama sesi dan status keterbatasan ditampilkan. Berkas bukti praktik disimpan sendiri oleh peserta.
 
 ## Konten dan akurasi
 
@@ -54,7 +53,7 @@ Situs referensi https://materi-ai.netlify.app/ dipelajari melalui browser pada s
 ## Lokasi sumber
 
 - index.html: kerangka dan navigasi.
-- assets/content.js: materi 9 modul, kuis, glosarium.
+- assets/content.js: materi 9 modul dan glosarium.
 - assets/datasets.js: data simulasi tunggal.
 - assets/app.js: komponen tampilan, routing, interaksi, penyimpanan.
 - assets/style.css: desain responsif, terang/gelap, dan cetak.
