@@ -1,0 +1,5 @@
+Saya mengunggah demo-topik-09.txt. File ini hanya berisi data simulasi untuk sharing di kantor konsultan pajak dan akuntansi.
+
+Buat ringkasan kasus: masalah utama, bukti berdasarkan ID, usulan pemeriksaan, hal yang belum bisa diputuskan, dan alur kerja yang aman. Gunakan hitungan yang dapat dicek. Jangan menyatakan hasil sudah disetujui atau menjamin kepatuhan pajak.
+
+Gunakan hanya bahan terlampir. Jika ada informasi yang belum tersedia, katakan dengan jelas dan jangan menebaknya. Hasil merupakan draft untuk diperiksa manusia.

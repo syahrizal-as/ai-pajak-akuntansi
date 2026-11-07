@@ -1,0 +1,11 @@
+BAHAN SHARING AI — DATA SIMULASI
+Topik: Mengenal alur kerja yang dibantu AI
+Tidak ada data klien nyata.
+
+SUMBER: brief-workflow.txt
+KASUS SIMULASI: Kantor konsultan menerima invoice dari beberapa kanal.
+Masalah: ATK-001 dikirim dua kali, UTIL-001 belum lengkap, nominal satu foto tidak terbaca.
+Tujuan: satu register sumber, draft pencatatan, antrean klarifikasi, dan persetujuan manusia.
+Batasan: jangan posting otomatis, jangan kirim laporan, jangan gunakan kredensial nyata.
+Peran: administrasi menerima; staf accounting memeriksa; reviewer menyetujui.
+

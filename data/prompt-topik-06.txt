@@ -1,0 +1,5 @@
+Saya mengunggah demo-topik-06.txt. File ini hanya berisi data simulasi untuk sharing di kantor konsultan pajak dan akuntansi.
+
+Buat rancangan alur dokumen masuk sampai draft pencatatan untuk diperiksa. Tuliskan tahap, peran penanggung jawab, pemeriksaan, dan jalur jika dokumen kurang atau dikirim ulang. Wajib ada persetujuan manusia sebelum posting. Jangan menjalankan integrasi atau meminta kredensial.
+
+Gunakan hanya bahan terlampir. Jika ada informasi yang belum tersedia, katakan dengan jelas dan jangan menebaknya. Hasil merupakan draft untuk diperiksa manusia.

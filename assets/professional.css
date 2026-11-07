@@ -396,3 +396,4 @@
  .home-page main section[tabindex="-1"]:focus {outline:none}
  .instructor-section {scroll-margin-top:12px}
 }
+.upload-kit{padding:24px;border:1px solid var(--border);background:var(--mint);border-radius:7px;margin-bottom:18px}.upload-kit h3{margin:12px 0}.upload-kit .button{margin:0 8px 10px 0;overflow-wrap:anywhere;max-width:100%}.history-list article{display:grid;grid-template-columns:110px 1fr;gap:22px;border-top:1px solid var(--border);padding:22px 0}.history-list strong{color:var(--green)}.history-list h4{font-size:17px;margin-bottom:10px}.history-list a{font-size:12px}.sharing-start p{max-width:720px;color:var(--muted)}.sharing-start .button{margin:10px 12px 0 0}@media(max-width:700px){.history-list article{grid-template-columns:1fr;gap:10px}.upload-kit{padding:20px}.upload-kit .button{font-size:11px}}

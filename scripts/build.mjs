@@ -18,7 +18,16 @@ await writeFile(path.join(root,'data/contoh-jurnal.csv'),csv([['id','tanggal','d
 const total=journal.reduce((s,r)=>s+r[5],0);
 if(total!==100450000||journal.reduce((s,r)=>s+r[6],0)!==total)throw Error('Kontrol jurnal gagal');
 await writeFile(path.join(root,'data/BACA-DULU.txt'),'PAKET SIMULASI — PT ASA MITRA KONSULTAN\nPeriode September 2026. Semua pihak fiktif, nilai rupiah.\nCSV UTF-8, pemisah koma. Kolom kosong bukan nol.\n12 baris transaksi mentah memuat kandidat duplikat T07.\nRincian pajak, penyusutan, dan jatuh tempo piutang tidak tersedia.\ncontoh-jurnal.csv adalah bahan pembahasan, bukan hasil final yang disetujui.\nBuka dokumen-dummy.html untuk invoice dan kuitansi; cetak melalui browser.\nGunakan lembar-kerja.md untuk bukti praktik, sumber, dan evaluasi.\n');
-const dataFiles=[...ctx.window.DATASETS.map(d=>d.file),'contoh-jurnal.csv','dokumen-dummy.html','lembar-kerja.md','BACA-DULU.txt'];
+vm.runInNewContext(await readFile(path.join(root,'assets/content.js'),'utf8'),ctx);
+const promptFiles=[];
+for(const m of ctx.window.COURSE){
+ const number=String(m.id).padStart(2,'0');
+ let body='BAHAN SHARING AI — DATA SIMULASI\nTopik: '+m.title+'\nTidak ada data klien nyata.\n';
+ for(const name of m.uploadFiles){if(name.endsWith('.pdf'))continue;body+='\nSUMBER: '+name+'\n'+await readFile(path.join(root,'data',name),'utf8')+'\n';}
+ const demo='demo-topik-'+number+'.txt',prompt='prompt-topik-'+number+'.txt';
+ await writeFile(path.join(root,'data',demo),body);await writeFile(path.join(root,'data',prompt),m.prompt+'\n');promptFiles.push(demo,prompt);
+}
+const dataFiles=[...ctx.window.DATASETS.map(d=>d.file),'contoh-jurnal.csv','dokumen-dummy.html','catatan-sharing.txt','BACA-DULU.txt','invoice-demo.pdf','brief-workflow.txt','skenario-keamanan.txt',...promptFiles];
 // Bangun ZIP baru tanpa menumpuk salinan berkas dari versi sebelumnya.
 await rm(path.join(root,'data/paket-latihan.zip'),{force:true});
 execFileSync('/usr/bin/zip',['-q',path.join(root,'data/paket-latihan.zip'),...dataFiles],{cwd:path.join(root,'data')});

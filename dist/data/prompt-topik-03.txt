@@ -1,0 +1,5 @@
+Saya mengunggah demo-topik-03.txt. File ini hanya berisi data simulasi untuk sharing di kantor konsultan pajak dan akuntansi.
+
+Buat checklist dokumen yang perlu diminta berdasarkan ID sumber dan draft email klarifikasi maksimal 150 kata. Jangan menyebut tarif, tenggat resmi, atau pasal yang tidak disediakan.
+
+Gunakan hanya bahan terlampir. Jika ada informasi yang belum tersedia, katakan dengan jelas dan jangan menebaknya. Hasil merupakan draft untuk diperiksa manusia.

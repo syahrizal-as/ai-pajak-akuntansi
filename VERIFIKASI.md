@@ -1,3 +1,11 @@
+# Penyesuaian sharing AI — 7 November 2026
+
+Format menjadi sharing sekitar satu jam. Topik awal berisi garis waktu 2020–2026 dan penjelasan model, aplikasi, multimodal, reasoning, serta agent dengan sumber primer yang diperiksa. Sembilan prompt memakai nama file unggahan eksplisit; 8 paket teks dan 1 invoice PDF menjadi masukan utama, disertai file prompt yang dapat diunduh.
+
+Build dan 4 test konten/data/arsip/kelengkapan unggahan lulus. Browser: 9 topik × 3 viewport, tanpa overflow atau panel unggahan yang hilang. Unduhan invoice PDF diuji langsung. Handout memuat 9 panel unduhan dan garis waktu. Tidak ada error JavaScript. Invoice PDF dirender dan diperiksa visual. Layanan AI eksternal tidak dipanggil; contoh keluaran tetap target ilustratif untuk diperiksa.
+
+---
+
 # Pembaruan tampilan — 6 November 2026
 
 Referensi ai-dispora.netlify.app diperiksa langsung melalui browser. Beranda memakai navigasi atas, latar putih hangat, hijau tua, tipografi besar, ilustrasi dokumen, bagian program, kartu kurikulum, dan studi kasus baru. Halaman materi tetap memakai sidebar serta daftar isi. Semua penamaan kasus diselaraskan menjadi PT ASA MITRA KONSULTAN; angka dan dokumen tetap data simulasi.

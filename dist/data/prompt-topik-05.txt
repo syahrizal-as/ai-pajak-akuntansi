@@ -1,0 +1,5 @@
+Saya mengunggah invoice-demo.pdf. File ini hanya berisi data simulasi untuk sharing di kantor konsultan pajak dan akuntansi.
+
+Baca invoice PDF terlampir. Buat tabel tanggal, nomor dokumen, penerbit, deskripsi, DPP, pajak, total, dan status verifikasi. Jika suatu bidang tidak dicantumkan, tulis "tidak tersedia", bukan 0. Jangan menghitung balik pajak. Sebutkan bagian yang harus dibandingkan dengan dokumen asli.
+
+Gunakan hanya bahan terlampir. Jika ada informasi yang belum tersedia, katakan dengan jelas dan jangan menebaknya. Hasil merupakan draft untuk diperiksa manusia.

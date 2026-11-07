@@ -1,0 +1,5 @@
+Saya mengunggah demo-topik-01.txt. File ini hanya berisi data simulasi untuk sharing di kantor konsultan pajak dan akuntansi.
+
+Buat tabel ID dokumen, status yang tertulis, informasi yang kurang, dan tindak lanjut. Jangan menambah fakta atau menetapkan pajak. Akhiri dengan 3 hal yang perlu dicek manusia.
+
+Gunakan hanya bahan terlampir. Jika ada informasi yang belum tersedia, katakan dengan jelas dan jangan menebaknya. Hasil merupakan draft untuk diperiksa manusia.

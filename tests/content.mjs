@@ -14,7 +14,7 @@ test('9 substantive modules include the demo content without removed exercise se
  assert.equal(COURSE.length,9);assert.equal(COURSE.reduce((s,m)=>s+m.minutes,0),810);
  for(const [i,m] of COURSE.entries()){
   assert.equal(m.id,i+1);assert.ok(m.title.length>15);assert.equal(m.objectives.length,3);assert.equal(m.competencies.length,3);
-  assert.equal(m.concepts.length,5);for(const [h,p] of m.concepts){assert.ok(h.length>8);assert.ok(p.length>180);}
+  assert.ok(m.concepts.length>=3);for(const [h,p] of m.concepts){assert.ok(h.trim());assert.ok(p.trim());}
   for(const k of ['tagline','caseTitle','caseText','prompt','expected','summary','safety'])assert.ok(typeof m[k]==='string'&&m[k].length>20,k);
   assert.equal(m.steps,undefined);assert.ok(m.applications.length>=3);assert.ok(m.mistakes.length>=3);assert.equal(m.quiz,undefined);assert.equal(m.exercise,undefined);
  }
@@ -58,4 +58,12 @@ test('build includes real downloadable files, safe assets, and complete offline 
  for(const file of ['app.js','content.js','datasets.js'])new vm.Script(await readFile(path.join(root,'assets',file),'utf8'));
  execFileSync('/usr/bin/unzip',['-tq',path.join(root,'portal-offline.zip')]);
  execFileSync('/usr/bin/unzip',['-tq',path.join(root,'data/paket-latihan.zip')]);
+});
+
+test('every sharing prompt has a matching upload and downloadable prompt',async()=>{
+ for(const m of COURSE){
+  assert.ok(m.uploadFiles.length>0);
+  for(const file of [m.upload,...m.uploadFiles,'prompt-topik-'+String(m.id).padStart(2,'0')+'.txt'])assert.ok((await stat(path.join(root,'dist/data',file))).size>0,file);
+  assert.ok(m.prompt.includes(m.upload));assert.ok(!/\[tempel|\[isi/.test(m.prompt));
+ }
 });

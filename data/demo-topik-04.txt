@@ -1,0 +1,63 @@
+BAHAN SHARING AI — DATA SIMULASI
+Topik: Membantu membaca transaksi dan mencocokkan bank
+Tidak ada data klien nyata.
+
+SUMBER: transaksi.csv
+﻿"id","tanggal","dokumen","jenis","pihak","deskripsi","nominal","hpp","referensi_bank","status_bukti"
+"T01","2026-09-02","S-001","penjualan_kredit","Pelanggan A","Penjualan barang kredit","15000000","9000000","","lengkap"
+"T02","2026-09-03","B-001","pembelian_kredit","Vendor B","Pembelian persediaan","8000000","0","","lengkap"
+"T03","2026-09-04","RC-001","penerimaan_piutang","Pelanggan C","Pelunasan piutang awal","10000000","0","BK01","lengkap"
+"T04","2026-09-05","PAY-001","pembayaran_utang","Vendor D","Pembayaran utang awal","10000000","0","BK02","lengkap"
+"T05","2026-09-07","SEWA-001","beban_sewa","Vendor E","Sewa September","3000000","0","BK03","lengkap"
+"T06","2026-09-08","ATK-001","beban_atk","Vendor F","Pembelian alat tulis","750000","0","BK04","lengkap"
+"T07","2026-09-08","ATK-001","beban_atk","Vendor F","Impor ulang baris T06","750000","0","BK04","kandidat_duplikat"
+"T08","2026-09-12","S-002","penjualan_tunai","Pelanggan G","Penjualan barang tunai","9000000","5400000","BK05","lengkap"
+"T09","2026-09-15","PAY-002","pembayaran_utang","Vendor B","Pelunasan B-001","8000000","0","BK06","lengkap"
+"T10","2026-09-20","UTIL-001","beban_utilitas","Vendor H","Pembayaran utilitas","1250000","0","BK07","invoice_belum_ada"
+"T11","2026-09-25","RC-002","penerimaan_piutang","Pelanggan A","Pelunasan S-001","15000000","0","BK08","lengkap"
+"T12","2026-09-28","ASET-001","pembelian_peralatan","Vendor I","Peralatan kantor","6000000","0","BK09","review_kebijakan_aset"
+
+
+SUMBER: bank.csv
+﻿"id","tanggal","referensi","deskripsi","masuk","keluar","saldo"
+"BK01","2026-09-04","RC-001","Pelunasan piutang awal","10000000","0","60000000"
+"BK02","2026-09-05","PAY-001","Pembayaran utang awal","0","10000000","50000000"
+"BK03","2026-09-07","SEWA-001","Sewa September","0","3000000","47000000"
+"BK04","2026-09-08","ATK-001","Alat tulis","0","750000","46250000"
+"BK05","2026-09-12","S-002","Penjualan tunai","9000000","0","55250000"
+"BK06","2026-09-15","PAY-002","Pelunasan B-001","0","8000000","47250000"
+"BK07","2026-09-20","UTIL-001","Utilitas","0","1250000","46000000"
+"BK08","2026-09-25","RC-002","Pelunasan S-001","15000000","0","61000000"
+"BK09","2026-09-28","ASET-001","Peralatan kantor","0","6000000","55000000"
+"BK10","2026-09-30","ADM-001","Biaya administrasi bank","0","50000","54950000"
+
+
+SUMBER: buku-kas.csv
+﻿"id_transaksi","tanggal","referensi","masuk","keluar","saldo"
+"T03","2026-09-04","RC-001","10000000","0","60000000"
+"T04","2026-09-05","PAY-001","0","10000000","50000000"
+"T05","2026-09-07","SEWA-001","0","3000000","47000000"
+"T06","2026-09-08","ATK-001","0","750000","46250000"
+"T07","2026-09-08","ATK-001","0","750000","45500000"
+"T08","2026-09-12","S-002","9000000","0","54500000"
+"T09","2026-09-15","PAY-002","0","8000000","46500000"
+"T10","2026-09-20","UTIL-001","0","1250000","45250000"
+"T11","2026-09-25","RC-002","15000000","0","60250000"
+"T12","2026-09-28","ASET-001","0","6000000","54250000"
+
+
+SUMBER: coa.csv
+﻿"kode","nama","kelompok","debit_awal","kredit_awal"
+"1101","Bank","Aset","50000000","0"
+"1102","Piutang usaha","Aset","12000000","0"
+"1103","Persediaan","Aset","20000000","0"
+"1201","Peralatan","Aset","18000000","0"
+"2101","Utang usaha","Liabilitas","0","20000000"
+"3101","Modal awal","Ekuitas","0","80000000"
+"4101","Penjualan","Pendapatan","0","0"
+"5101","Harga pokok penjualan","Beban","0","0"
+"6101","Beban sewa","Beban","0","0"
+"6102","Beban ATK","Beban","0","0"
+"6103","Beban utilitas","Beban","0","0"
+"6104","Beban administrasi bank","Beban","0","0"
+

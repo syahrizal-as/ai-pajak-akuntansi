@@ -1,0 +1,14 @@
+window.AI_HISTORY=[
+ ['2020–2021','Model bahasa mulai lebih mudah diintegrasikan','OpenAI membuka API pada Juni 2020. Bayangkan mesin pembuat teks yang dipasang pengembang ke aplikasi. Contoh kantor: membuat draft kalimat, dengan pemeriksaan manusia.','https://openai.com/index/openai-api/'],
+ ['2022','Percakapan membuat AI lebih mudah dicoba','ChatGPT diperkenalkan pada 30 November 2022. Pengguna dapat bertanya dan memberi koreksi lewat percakapan. Contoh: menyederhanakan draft email permintaan dokumen.','https://openai.com/index/chatgpt/'],
+ ['2023','Instruksi dan bahan yang lebih beragam','GPT-4 diperkenalkan pada Maret 2023 dengan kemampuan teks dan masukan gambar. Contoh: membantu menjelaskan dokumen; fitur yang dapat dipakai tetap bergantung layanan.','https://openai.com/index/gpt-4-research/'],
+ ['2024','Teks, gambar, suara; penelaahan lebih panjang','GPT-4o diperkenalkan untuk teks, gambar, dan audio. Pada tahun yang sama o1-preview menyoroti reasoning. Contoh: membaca invoice dan menelaah selisih, lalu memeriksa angka sumber.','https://openai.com/index/hello-gpt-4o/'],
+ ['2025','Kemampuan berpikir dan memakai alat makin dipadukan','GPT-5 diperkenalkan pada Agustus 2025. Arah perkembangannya menggabungkan jawaban cepat dan penelaahan lebih dalam. Contoh kantor: membantu beberapa tahap analisis, bukan hanya membuat paragraf.','https://openai.com/index/introducing-gpt-5/'],
+ ['2026 · sampai sekarang','Dari percakapan ke bantuan pekerjaan beberapa tahap','Keluarga GPT-6 dan Claude Sonnet 5 menjadi contoh pengembangan kemampuan kerja dengan alat. Tetap perlu izin, sumber, dan review; bukan berarti semua akun bisa menjalankan tindakan otomatis.','https://openai.com/index/gpt-6-astra/']
+];
+window.AI_MODEL_EXAMPLES=[
+ ['Model bahasa / LLM','Membaca dan menyusun teks','Ringkasan email, daftar pertanyaan untuk klien, draft laporan.','GPT (OpenAI), Claude (Anthropic), Gemini (Google) adalah contoh keluarga model; model dan fitur aplikasi tidak sama.'],
+ ['Multimodal','Mengolah beberapa jenis masukan','Membaca invoice bergambar atau membicarakan isi dokumen.','GPT-4o adalah contoh historis; Gemini juga memiliki kemampuan multimodal. Periksa dukungan file pada layanan yang digunakan.'],
+ ['Reasoning / penelaahan lebih panjang','Memberi lebih banyak ruang pemrosesan untuk tugas sulit','Menelaah kemungkinan penyebab selisih bank dan memisahkan asumsi.','o1-preview adalah contoh historis. Mode berpikir pada layanan sekarang dapat berbeda nama; hasil hitungan tetap harus diuji.'],
+ ['Agent dengan alat','Model yang dipasangkan dengan alat, langkah kerja, dan izin','Membaca register, menyiapkan draft, lalu berhenti untuk persetujuan.','Claude Sonnet 5 dan keluarga GPT-6 memberi contoh arah kemampuan ini. Agent adalah sistem kerja, bukan jenis jawaban yang otomatis aman.']
+];

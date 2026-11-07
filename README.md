@@ -1,3 +1,7 @@
+# Sharing AI untuk Konsultan Pajak & Akuntansi
+
+Sesi sharing sekitar satu jam, bukan program pelatihan atau asesmen. Alur dimulai dari perkembangan AI 2020–2026 dan pengenalan model, lalu contoh pekerjaan kantor. Setiap prompt memiliki file unggahan yang dapat diunduh langsung; semua data sintetis.
+
 # AI untuk Konsultan Pajak & Akuntansi
 
 Portal HTML/CSS/JavaScript statis di folder pajak untuk sesi pengenalan dan demo AI sekitar 1 jam, dengan materi pendamping untuk belajar mandiri. Tanpa backend, autentikasi aplikasi, framework baru, font eksternal, atau panggilan API AI. Seluruh materi substantif tersedia lokal.
@@ -68,3 +72,5 @@ Konfigurasi Netlify root tetap mengarah ke portal kelas. Folder pajak memiliki k
 Tampilan diselaraskan dengan referensi ai-dispora.netlify.app: beranda editorial penuh, warna hijau tua dan putih hangat, tipografi serta jarak lebih lega, ilustrasi alur dokumen, dan kartu kurikulum. Navigasi sidebar tetap tersedia pada halaman materi. Nama studi kasus diselaraskan menjadi PT ASA MITRA KONSULTAN pada materi, prompt, sampel dokumen, dan paket latihan; seluruh angka tetap simulasi.
 
 Blok statistik beranda dihapus. Panduan acara memakai alur demo sekitar 60 menit; durasi tiap modul tetap merupakan estimasi belajar mandiri.
+
+Perkembangan dan contoh model diperiksa pada sumber resmi 7 November 2026; tautan tersedia pada topik 1–2. File invoice-demo.pdf dipakai untuk ekstraksi PDF, bukan klaim bahwa semua PDF memerlukan OCR.

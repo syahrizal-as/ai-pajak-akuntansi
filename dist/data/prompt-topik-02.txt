@@ -1,0 +1,5 @@
+Saya mengunggah demo-topik-02.txt. File ini hanya berisi data simulasi untuk sharing di kantor konsultan pajak dan akuntansi.
+
+Fokus pada T03, T07, T10, dan T12. Buat tabel ID, fakta sumber, kategori awal, alasan singkat, dan pertanyaan lanjutan. Jangan anggap pelunasan piutang sebagai penjualan baru. Jangan memposting transaksi atau menebak pajak.
+
+Gunakan hanya bahan terlampir. Jika ada informasi yang belum tersedia, katakan dengan jelas dan jangan menebaknya. Hasil merupakan draft untuk diperiksa manusia.

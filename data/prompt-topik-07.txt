@@ -1,0 +1,5 @@
+Saya mengunggah demo-topik-07.txt. File ini hanya berisi data simulasi untuk sharing di kantor konsultan pajak dan akuntansi.
+
+Bandingkan Agustus dan September. Tampilkan perubahan pendapatan, HPP, beban, dan margin dengan angka dasarnya. Pisahkan fakta, dugaan, dan pertanyaan lanjutan. Tulis ringkasan maksimal 180 kata. Tegaskan bahwa penyusutan dan pajak belum dimodelkan.
+
+Gunakan hanya bahan terlampir. Jika ada informasi yang belum tersedia, katakan dengan jelas dan jangan menebaknya. Hasil merupakan draft untuk diperiksa manusia.

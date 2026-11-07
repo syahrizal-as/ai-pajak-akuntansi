@@ -1,0 +1,5 @@
+Saya mengunggah demo-topik-04.txt. File ini hanya berisi data simulasi untuk sharing di kantor konsultan pajak dan akuntansi.
+
+Cocokkan buku kas dengan bank menggunakan referensi dokumen. Tunjukkan kandidat duplikat dan biaya yang belum dicatat. Buat rekonsiliasi saldo serta draft jurnal menggunakan COA yang diberikan. Tampilkan hitungan. Jangan menghapus sumber, membuat angka penyeimbang, atau menentukan pajak dan penyusutan.
+
+Gunakan hanya bahan terlampir. Jika ada informasi yang belum tersedia, katakan dengan jelas dan jangan menebaknya. Hasil merupakan draft untuk diperiksa manusia.
