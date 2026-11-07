@@ -3,7 +3,7 @@ Topik: Menjelaskan angka keuangan dengan bahasa sederhana
 Tidak ada data klien nyata.
 
 SUMBER: laporan.csv
-﻿"indikator","agustus","september","satuan"
+"indikator","agustus","september","satuan"
 "Pendapatan","20000000","24000000","IDR"
 "HPP","12000000","14400000","IDR"
 "Laba kotor","8000000","9600000","IDR"
@@ -17,9 +17,8 @@ SUMBER: laporan.csv
 "Utang akhir","","10000000","IDR"
 "Modal dan hasil periode","","84550000","IDR"
 
-
 SUMBER: bank.csv
-﻿"id","tanggal","referensi","deskripsi","masuk","keluar","saldo"
+"id","tanggal","referensi","deskripsi","masuk","keluar","saldo"
 "BK01","2026-09-04","RC-001","Pelunasan piutang awal","10000000","0","60000000"
 "BK02","2026-09-05","PAY-001","Pembayaran utang awal","0","10000000","50000000"
 "BK03","2026-09-07","SEWA-001","Sewa September","0","3000000","47000000"
@@ -30,4 +29,3 @@ SUMBER: bank.csv
 "BK08","2026-09-25","RC-002","Pelunasan S-001","15000000","0","61000000"
 "BK09","2026-09-28","ASET-001","Peralatan kantor","0","6000000","55000000"
 "BK10","2026-09-30","ADM-001","Biaya administrasi bank","0","50000","54950000"
-

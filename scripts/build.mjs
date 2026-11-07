@@ -23,9 +23,9 @@ const promptFiles=[];
 for(const m of ctx.window.COURSE){
  const number=String(m.id).padStart(2,'0');
  let body='BAHAN SHARING AI — DATA SIMULASI\nTopik: '+m.title+'\nTidak ada data klien nyata.\n';
- for(const name of m.uploadFiles){if(name.endsWith('.pdf'))continue;body+='\nSUMBER: '+name+'\n'+await readFile(path.join(root,'data',name),'utf8')+'\n';}
+ for(const name of m.uploadFiles){if(name.endsWith('.pdf'))continue;body+='\nSUMBER: '+name+'\n'+(await readFile(path.join(root,'data',name),'utf8')).replace(/\r\n/g,'\n').replace(/^\uFEFF/,'').trimEnd()+'\n';}
  const demo='demo-topik-'+number+'.txt',prompt='prompt-topik-'+number+'.txt';
- await writeFile(path.join(root,'data',demo),body);await writeFile(path.join(root,'data',prompt),m.prompt+'\n');promptFiles.push(demo,prompt);
+ await writeFile(path.join(root,'data',demo),body.trimEnd()+'\n');await writeFile(path.join(root,'data',prompt),m.prompt+'\n');promptFiles.push(demo,prompt);
 }
 const dataFiles=[...ctx.window.DATASETS.map(d=>d.file),'contoh-jurnal.csv','dokumen-dummy.html','catatan-sharing.txt','BACA-DULU.txt','invoice-demo.pdf','brief-workflow.txt','skenario-keamanan.txt',...promptFiles];
 // Bangun ZIP baru tanpa menumpuk salinan berkas dari versi sebelumnya.

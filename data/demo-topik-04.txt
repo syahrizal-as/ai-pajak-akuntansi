@@ -3,7 +3,7 @@ Topik: Membantu membaca transaksi dan mencocokkan bank
 Tidak ada data klien nyata.
 
 SUMBER: transaksi.csv
-﻿"id","tanggal","dokumen","jenis","pihak","deskripsi","nominal","hpp","referensi_bank","status_bukti"
+"id","tanggal","dokumen","jenis","pihak","deskripsi","nominal","hpp","referensi_bank","status_bukti"
 "T01","2026-09-02","S-001","penjualan_kredit","Pelanggan A","Penjualan barang kredit","15000000","9000000","","lengkap"
 "T02","2026-09-03","B-001","pembelian_kredit","Vendor B","Pembelian persediaan","8000000","0","","lengkap"
 "T03","2026-09-04","RC-001","penerimaan_piutang","Pelanggan C","Pelunasan piutang awal","10000000","0","BK01","lengkap"
@@ -17,9 +17,8 @@ SUMBER: transaksi.csv
 "T11","2026-09-25","RC-002","penerimaan_piutang","Pelanggan A","Pelunasan S-001","15000000","0","BK08","lengkap"
 "T12","2026-09-28","ASET-001","pembelian_peralatan","Vendor I","Peralatan kantor","6000000","0","BK09","review_kebijakan_aset"
 
-
 SUMBER: bank.csv
-﻿"id","tanggal","referensi","deskripsi","masuk","keluar","saldo"
+"id","tanggal","referensi","deskripsi","masuk","keluar","saldo"
 "BK01","2026-09-04","RC-001","Pelunasan piutang awal","10000000","0","60000000"
 "BK02","2026-09-05","PAY-001","Pembayaran utang awal","0","10000000","50000000"
 "BK03","2026-09-07","SEWA-001","Sewa September","0","3000000","47000000"
@@ -31,9 +30,8 @@ SUMBER: bank.csv
 "BK09","2026-09-28","ASET-001","Peralatan kantor","0","6000000","55000000"
 "BK10","2026-09-30","ADM-001","Biaya administrasi bank","0","50000","54950000"
 
-
 SUMBER: buku-kas.csv
-﻿"id_transaksi","tanggal","referensi","masuk","keluar","saldo"
+"id_transaksi","tanggal","referensi","masuk","keluar","saldo"
 "T03","2026-09-04","RC-001","10000000","0","60000000"
 "T04","2026-09-05","PAY-001","0","10000000","50000000"
 "T05","2026-09-07","SEWA-001","0","3000000","47000000"
@@ -45,9 +43,8 @@ SUMBER: buku-kas.csv
 "T11","2026-09-25","RC-002","15000000","0","60250000"
 "T12","2026-09-28","ASET-001","0","6000000","54250000"
 
-
 SUMBER: coa.csv
-﻿"kode","nama","kelompok","debit_awal","kredit_awal"
+"kode","nama","kelompok","debit_awal","kredit_awal"
 "1101","Bank","Aset","50000000","0"
 "1102","Piutang usaha","Aset","12000000","0"
 "1103","Persediaan","Aset","20000000","0"
@@ -60,4 +57,3 @@ SUMBER: coa.csv
 "6102","Beban ATK","Beban","0","0"
 "6103","Beban utilitas","Beban","0","0"
 "6104","Beban administrasi bank","Beban","0","0"
-

@@ -8,4 +8,3 @@ Masalah: ATK-001 dikirim dua kali, UTIL-001 belum lengkap, nominal satu foto tid
 Tujuan: satu register sumber, draft pencatatan, antrean klarifikasi, dan persetujuan manusia.
 Batasan: jangan posting otomatis, jangan kirim laporan, jangan gunakan kredensial nyata.
 Peran: administrasi menerima; staf accounting memeriksa; reviewer menyetujui.
-

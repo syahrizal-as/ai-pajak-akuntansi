@@ -3,7 +3,7 @@ Topik: Merapikan berkas dan pertanyaan untuk klien
 Tidak ada data klien nyata.
 
 SUMBER: dokumen.csv
-﻿"id","dokumen","terkait","kondisi","tindak_lanjut"
+"id","dokumen","terkait","kondisi","tindak_lanjut"
 "D01","S-001","T01/T11","invoice tersedia","Cocokkan pengiriman dan penerimaan"
 "D02","B-001","T02/T09","invoice tersedia","Cocokkan penerimaan barang dan pelunasan"
 "D03","ATK-001","T06/T07","satu kuitansi, dua baris impor","Konfirmasi satu pembayaran lalu keluarkan T07 dari posting"
@@ -12,9 +12,8 @@ SUMBER: dokumen.csv
 "D06","Rincian pajak dokumen","seluruh dokumen","tidak disediakan pada simulasi","Tentukan kebutuhan sumber dan dokumen; jangan mengarang DPP atau tarif"
 "D07","Daftar umur piutang","saldo awal","tanggal jatuh tempo belum tersedia","Minta rincian jatuh tempo sebelum menghitung aging"
 
-
 SUMBER: transaksi.csv
-﻿"id","tanggal","dokumen","jenis","pihak","deskripsi","nominal","hpp","referensi_bank","status_bukti"
+"id","tanggal","dokumen","jenis","pihak","deskripsi","nominal","hpp","referensi_bank","status_bukti"
 "T01","2026-09-02","S-001","penjualan_kredit","Pelanggan A","Penjualan barang kredit","15000000","9000000","","lengkap"
 "T02","2026-09-03","B-001","pembelian_kredit","Vendor B","Pembelian persediaan","8000000","0","","lengkap"
 "T03","2026-09-04","RC-001","penerimaan_piutang","Pelanggan C","Pelunasan piutang awal","10000000","0","BK01","lengkap"
@@ -27,4 +26,3 @@ SUMBER: transaksi.csv
 "T10","2026-09-20","UTIL-001","beban_utilitas","Vendor H","Pembayaran utilitas","1250000","0","BK07","invoice_belum_ada"
 "T11","2026-09-25","RC-002","penerimaan_piutang","Pelanggan A","Pelunasan S-001","15000000","0","BK08","lengkap"
 "T12","2026-09-28","ASET-001","pembelian_peralatan","Vendor I","Peralatan kantor","6000000","0","BK09","review_kebijakan_aset"
-
