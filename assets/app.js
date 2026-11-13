@@ -31,7 +31,7 @@ function home(){
    <span class="hero-eyebrow"><i aria-hidden="true"></i> SHARING AI UNTUK KANTOR KONSULTAN · ±1 JAM</span>
    <h1 id="course-title" tabindex="-1">AI untuk Konsultan<br><em>Pajak & Akuntansi.</em></h1>
    <p class="hero-description">Pemanfaatan Artificial Intelligence untuk meningkatkan efisiensi, akurasi, dan kualitas layanan konsultasi pajak serta akuntansi di Indonesia.</p>
-   <div class="hero-actions"><a class="button primary" href="#/modul/${state.last}">${hasStarted?'Lanjutkan belajar':'Mulai belajar'} ${icon('arrow')}</a><a class="button text-button" href="#/home/kurikulum">Lihat kurikulum <span aria-hidden="true">↓</span></a></div>
+   <div class="hero-actions"><a class="button primary" href="#/modul/${state.last}">${hasStarted?'Lanjutkan belajar':'Mulai belajar'} ${icon('arrow')}</a><a class="button text-button" href="#/home/kurikulum">Lihat kurikulum <span aria-hidden="true">↓</span></a><button type="button" class="button text-button" data-opening-meme>Lihat meme pembuka</button></div>
    <div class="hero-assurance"><span>${icon('check')} Berbasis studi kasus</span><span>${icon('check')} Bisa dipelajari offline</span></div>
    <div class="hero-instructor"><span class="instructor-monogram small" aria-hidden="true">SA</span><div><span>Dipandu oleh <a href="#/home/instruktur">Syahrizal As.</a></span><small>Software Developer & Trainer</small></div></div><p class="hero-review-note">AI membantu pekerjaan.<br><strong>Penilaian profesional tetap menentukan.</strong></p>
   </div>
@@ -95,6 +95,7 @@ const section=page==='modul'?parts[2]:(page==='panduan'||page==='home')?parts[1]
 }
 async function copyPrompt(id){const value=modules.find(m=>m.id===Number(id)).prompt;let copied=false;try{await navigator.clipboard.writeText(value);copied=true;}catch{const el=document.createElement('textarea');el.value=value;el.style.position='fixed';el.style.opacity='0';document.body.append(el);el.select();try{copied=document.execCommand('copy');}catch{}el.remove();}if(copied){toast('Prompt disalin.');return;}$('#copy-text').value=value;$('#copy-dialog').showModal();$('#copy-text').focus();$('#copy-text').select();}
 function bindMain(){
+$('[data-opening-meme]')?.addEventListener('click',()=>$('#opening-meme').showModal());
 $$('[data-print]').forEach(b=>b.addEventListener('click',()=>window.print()));
 $$('[data-copy]').forEach(b=>b.addEventListener('click',()=>copyPrompt(b.dataset.copy)));
 $$('[data-complete]').forEach(b=>b.addEventListener('click',()=>{const id=Number(b.dataset.complete),was=state.completed.includes(id);state.completed=was?state.completed.filter(x=>x!==id):[...state.completed,id];persist();sidebar();const parent=b.closest('.completion');parent.querySelector('h3').textContent=was?'Sudah membaca topik ini?':'Modul ditandai selesai';b.innerHTML=(was?'Tandai sudah dibaca':'Batalkan penanda')+icon('check');toast(was?'Penanda selesai dibatalkan.':'Modul ditandai selesai. Progres diperbarui.');}));
@@ -108,8 +109,21 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if($('#sidebar').cl
 document.addEventListener('click',e=>{if(!e.target.closest('.search-wrap'))$('#search-results').hidden=true;});
 $('#search').addEventListener('input',e=>{const query=e.target.value.trim().toLowerCase(),results=$('#search-results');results.hidden=!query;if(!query)return;const matches=modules.map(m=>{const section=sections.find(([id])=>{const fields={tujuan:[...m.objectives,...m.competencies],konsep:m.concepts,penerapan:m.applications,kasus:[m.caseTitle,m.caseText],prompt:m.prompt,hasil:m.expected,kesalahan:m.mistakes,keamanan:m.safety,ringkasan:m.summary};return JSON.stringify(fields[id]).toLowerCase().includes(query);});return {m,section};}).filter(({m,section})=>section||(m.title+' '+m.short).toLowerCase().includes(query));results.innerHTML=matches.length?matches.map(({m,section})=>`<a href="#/modul/${m.id}${section?'/'+section[0]:''}"><small>TOPIK ${m.id} ${section?'· '+section[1]:''}</small>${esc(m.title)}</a>`).join(''):`<p role="status">Tidak ada materi yang cocok. Coba istilah lain atau buka <a href="#/glosarium">glosarium</a>.</p>`;});
 $('.skip').addEventListener('click',e=>{e.preventDefault();$('#utama').focus();window.scrollTo(0,0);});
-window.addEventListener('hashchange',go);
+window.addEventListener('hashchange',()=>{
+ if($('#opening-meme').open)$('#opening-meme').close();
+ go();
+});
 window.addEventListener('beforeprint',()=>{$$('details').forEach(d=>{d.dataset.printOpen=d.open?'1':'0';d.open=true;});});
 window.addEventListener('afterprint',()=>{$$('details[data-print-open]').forEach(d=>{d.open=d.dataset.printOpen==='1';delete d.dataset.printOpen;});});
 theme();go();
+// Only interrupt the first direct visit to the homepage in this tab session.
+if(!location.hash||location.hash==='#/'||location.hash==='#'){
+ const seenKey='ai-praktika-opening-meme-v1';
+ let seen=false;
+ try{seen=sessionStorage.getItem(seenKey)==='1';}catch{}
+ if(!seen){
+  $('#opening-meme').showModal();
+  try{sessionStorage.setItem(seenKey,'1');}catch{}
+ }
+}
 })();
