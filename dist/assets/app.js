@@ -120,7 +120,7 @@ function routePage(){
  $('#opening-question').hidden=answer;
  $('#opening-answer').hidden=!answer;
  $('#opening-step').textContent=answer?'02 / 02':'01 / 02';
- document.title=answer?'Mundur satu slide.':'Kenapa Gibran mundur?';
+ document.title=answer?'AI, blockchain, dan robotik':'Gibran mundur dari jabatan Wapres';
  window.scrollTo(0,0);
  $(answer?'#opening-answer h1':'#opening-question h1').focus({preventScroll:true});
 }
