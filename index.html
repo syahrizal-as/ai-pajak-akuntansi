@@ -5,7 +5,7 @@
  <meta name="viewport" content="width=device-width,initial-scale=1">
  <meta name="description" content="Materi sharing AI untuk konsultan pajak dan akuntansi di Indonesia. Sembilan modul, studi kasus, dataset dummy, dan kuis interaktif.">
  <meta name="color-scheme" content="light dark">
- <title>AI untuk Konsultan Pajak & Akuntansi</title>
+ <title>Kenapa Gibran mundur?</title>
  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
  <link rel="stylesheet" href="assets/style.css">
  <link rel="stylesheet" href="assets/professional.css">
@@ -15,16 +15,36 @@
  <script src="assets/app.js" defer></script>
 </head>
 <body>
+ <section id="opening-page" class="opening-page" role="main">
+  <div class="opening-stage">
+   <header class="opening-topline"><span>PEMBUKA SESI · PARODI</span><span id="opening-step" aria-hidden="true">01 / 02</span></header>
+   <div id="opening-question" class="opening-scene">
+    <span class="opening-label" aria-hidden="true">SATU PERTANYAAN SEBELUM MULAI</span>
+    <h1 tabindex="-1">Kenapa Gibran <em>mundur?</em></h1>
+    <a class="opening-action" href="#/jawaban">Lihat jawabannya <span aria-hidden="true">→</span></a>
+   </div>
+   <div id="opening-answer" class="opening-scene" hidden>
+    <span class="opening-label">JAWABANNYA...</span>
+    <h1 tabindex="-1">Mundur <em>satu slide.</em></h1>
+    <p class="opening-lead">Biar sempat bahas AI dulu.</p>
+    <ul class="opening-tags" aria-label="Istilah yang disebut saat debat"><li>AI</li><li>Blockchain</li><li>Robotik</li></ul>
+    <p class="opening-context">Gibran pernah menyebut ketiganya saat membahas keahlian digital dalam <a href="https://www.cnbcindonesia.com/tech/20231222193721-37-499726/gibran-lanjutkan-program-jokowi-sebut-hilirisasi-digital" target="_blank" rel="noopener noreferrer">debat cawapres 22 Desember 2023 ↗</a>. Di sesi ini, kita fokus pada AI untuk pekerjaan kantor.</p>
+    <a class="opening-action" href="#/home">Lanjut ke sharing AI <span aria-hidden="true">→</span></a>
+    <a class="opening-back" href="#/pembuka">← Ulangi pembuka</a>
+   </div>
+  </div>
+ </section>
+ <div id="sharing-site" hidden>
  <a class="skip" href="#utama">Lewati ke konten utama</a>
  <div class="institutional-strip"><span>SHARING AI · PAJAK & AKUNTANSI</span><span>Belajar terarah. Praktik bertanggung jawab. <span aria-hidden="true">✦</span></span></div>
  <header class="topbar">
-  <a href="#/" class="brand" aria-label="Beranda AI Praktika"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>AI<span class="brand-light">Praktika</span><small>PAJAK & AKUNTANSI</small></span></a>
+  <a href="#/home" class="brand" aria-label="Beranda AI Praktika"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>AI<span class="brand-light">Praktika</span><small>PAJAK & AKUNTANSI</small></span></a>
   <nav class="top-links" aria-label="Navigasi utama"><a href="#/home/tentang">Tentang program</a><a href="#/home/instruktur">Pembicara</a><a href="#/home/kurikulum">Kurikulum</a><a href="#/home/studi-kasus">Studi kasus</a><a href="#/bahan">Bahan praktik</a></nav>
   <div class="top-actions"><span class="local-badge"><i></i>Akses materi offline</span><button id="theme" class="icon-button" aria-label="Aktifkan mode gelap" title="Ganti tema"></button><button id="menu" class="icon-button menu-button" aria-label="Buka navigasi" aria-expanded="false" aria-controls="sidebar"></button></div>
  </header>
  <button class="overlay" id="overlay" aria-label="Tutup navigasi" hidden></button>
  <aside class="sidebar" id="sidebar" aria-label="Navigasi pembelajaran">
-  <div class="side-top"><span class="eyebrow">RUANG BELAJAR</span><a href="#/" class="nav-home" data-nav="home"><span aria-hidden="true">⌂</span> Ikhtisar sharing</a></div>
+  <div class="side-top"><span class="eyebrow">RUANG BELAJAR</span><a href="#/home" class="nav-home" data-nav="home"><span aria-hidden="true">⌂</span> Ikhtisar sharing</a></div>
   <div class="side-heading">TOPIK SHARING <span>9 TOPIK</span></div>
   <nav id="module-nav" aria-label="Daftar topik"></nav>
   <div class="side-heading side-resource">PERPUSTAKAAN</div>
@@ -37,19 +57,8 @@
   <footer class="site-footer"><span>AI Praktika <span aria-hidden="true">·</span> Sharing berbasis contoh</span><span>Pembicara: <a href="#/home/instruktur">Syahrizal As.</a></span><span>Data simulasi. Keputusan tetap pada profesional.</span></footer>
  </div>
  <div id="toast" class="toast" role="status" aria-live="polite"></div>
- <dialog id="opening-meme" class="opening-meme" aria-labelledby="opening-meme-title" aria-describedby="opening-meme-punchline">
-  <div class="opening-meme-art" aria-hidden="true"><span>←</span><span>SLIDE<br><strong>01</strong></span><span>AI PRAKTIKA<br>PEMBUKA SHARING</span></div>
-  <div class="opening-meme-body">
-   <span class="eyebrow">INTERMEZZO · PARODI PRESENTASI</span>
-   <h2 id="opening-meme-title">Kenapa Gibran mundur?</h2>
-   <p id="opening-meme-punchline" class="opening-meme-punchline">Mundur <em>satu slide.</em><br>Biar sempat bahas AI dulu.</p>
-   <div class="opening-meme-topics" aria-label="Istilah dalam debat"><span>AI</span><span>Blockchain</span><span>Robotik</span></div>
-   <p class="opening-meme-source">Istilah ini pernah Gibran sebut saat membahas keahlian digital dalam debat cawapres 22 Desember 2023. <a href="https://www.cnbcindonesia.com/tech/20231222193721-37-499726/gibran-lanjutkan-program-jokowi-sebut-hilirisasi-digital" target="_blank" rel="noopener noreferrer">Sumber konteks ↗</a></p>
-   <p>Kali ini, kita fokus ke AI: bagaimana teknologi ini bisa membantu membaca invoice, menata data, dan menyiapkan draft analisis?</p>
-   <form method="dialog"><button class="button primary" autofocus>Lanjut ke sharing <span aria-hidden="true">→</span></button></form>
-  </div>
- </dialog>
  <dialog id="copy-dialog" aria-labelledby="copy-title"><h2 id="copy-title">Salin prompt secara manual</h2><p>Salin otomatis tidak tersedia pada browser ini. Pilih teks berikut lalu gunakan Ctrl/Cmd+C.</p><textarea id="copy-text" readonly aria-label="Teks prompt"></textarea><form method="dialog"><button class="button primary">Tutup</button></form></dialog>
+ </div>
  <noscript><p class="no-script">Aktifkan JavaScript untuk materi dan kuis interaktif. Seluruh bahan latihan tetap tersedia di folder data.</p></noscript>
 </body>
 </html>
